@@ -1,0 +1,28 @@
+/* metrics */
+
+.metrics {
+    grid-template-columns: 1fr;
+}
+
+/* charts */
+
+.charts>div {
+    flex: 1 1 400px;
+}
+
+#barChart,
+#donutChart {
+    height: 400px;
+}
+
+@media (min-width: 576px) {
+    .metrics {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .metrics {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
