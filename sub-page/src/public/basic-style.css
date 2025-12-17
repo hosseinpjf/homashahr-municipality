@@ -1,0 +1,329 @@
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-Thin.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-Thin.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-Thin.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-ExtraLight.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-ExtraLight.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-ExtraLight.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-Light.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-Light.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-Light.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-Regular.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-Regular.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-Regular.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-Medium.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-Medium.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-Medium.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-SemiBold.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-Bold.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-Bold.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-Bold.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-ExtraBold.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/web/Inter-Black.woff2') format('woff2'),
+        url('../assets/fonts/extras/woff-hinted/Inter-Black.woff2') format('woff2'),
+        url('../assets/fonts/extras/otf/Inter-Black.otf') format('opentype'),
+        url('../assets/fonts/extras/ttf/Inter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* پس‌زمینه کل سایت */
+    --color-background: #f4f5f9;
+    /* رنگ باکس‌ها یا کارت‌ها */
+    --color-surface: #ffffff;
+    /* متن اصلی */
+    --color-text-primary: #605a5a;
+    /* رنگ تاکید یا المان‌های برجسته */
+    --color-accent: #f59f37;
+    /* رنگ موفقیت/تأیید */
+    --color-success: #009991;
+    /* زیر متن ها */
+    /* --color-secondary: #d9d9d9;
+    --color-secondary: #e5e5e5; */
+    --color-secondary: #808080;
+    /* فونت */
+    /* --font-Inter: Inter; */
+    --font-Inter: system-ui;
+    /* انیمیشن تغییر رنگ صفحه */
+    --change-color: background-color 0s linear, color 0s linear;
+    /* hover */
+    /* --hover-smooth: #d9dbe0; */
+    --hover-smooth: rgba(217, 219, 224, 0.5);
+    /* border */
+    --border-color: #d0d2d6;
+}
+
+/* ---------------------------< Basic tag structure >--------------------------- */
+
+* {
+    direction: rtl;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-Inter), sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--font-Inter), sans-serif;
+    transition: var(--change-color);
+    min-height: 100dvh;
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+a {
+    display: inline-block;
+}
+
+input {
+    box-shadow: none !important;
+    color: var(--color-text-primary) !important;
+    font-weight: 100;
+}
+
+::placeholder {
+    color: var(--border-color) !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ---------------------------< Utility Classes >--------------------------- */
+
+.bg-body {
+    background-color: var(--color-background) !important;
+    transition: var(--change-color);
+}
+
+.bg-surface {
+    background-color: var(--color-surface) !important;
+    transition: var(--change-color);
+}
+
+.bg-primary {
+    background-color: var(--color-text-primary) !important;
+    transition: var(--change-color);
+}
+
+.bg-success {
+    background-color: var(--color-success) !important;
+    transition: var(--change-color);
+}
+
+.bg-accent {
+    background-color: var(--color-accent) !important;
+    transition: var(--change-color);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary) !important;
+    transition: var(--change-color);
+}
+
+.text-body {
+    color: var(--color-background) !important;
+    transition: var(--change-color);
+}
+
+.text-surface {
+    color: var(--color-surface) !important;
+    transition: var(--change-color);
+}
+
+.text-primary {
+    color: var(--color-text-primary) !important;
+    transition: var(--change-color);
+}
+
+.text-success {
+    color: var(--color-success) !important;
+    transition: var(--change-color);
+}
+
+.text-accent {
+    color: var(--color-accent) !important;
+    transition: var(--change-color);
+}
+
+.text-secondary {
+    color: var(--color-secondary) !important;
+    transition: var(--change-color);
+}
+
+.border-color {
+    border-color: var(--border-color) !important;
+}
+
+.hover-smooth:hover {
+    background-color: var(--hover-smooth) !important;
+    transform: background-color .1s ease;
+}
+
+.image-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.direction-ltr {
+    direction: ltr;
+}
+
+.single-line {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.btn:active{
+    opacity: 0.6;
+}
+
+/* ---------------------------< header & main & sidebar >--------------------------- */
+
+/* header */
+
+header {
+    height: 90px;
+    z-index: 10;
+}
+
+.header-nav>a {
+    aspect-ratio: 1 / 1;
+    width: 50px;
+}
+
+.header-nav circle {
+    color: #808080 !important;
+}
+
+/* main */
+
+main {
+    min-height: calc(100dvh - 90px);
+}
+
+/* sidebar */
+
+.sidebar {
+    background-color: var(--color-surface) !important;
+    z-index: 10500000 !important;
+    width: 90% !important;
+    max-width: 350px !important;
+}
+
+.sidebar-list a.active {
+    background-color: var(--color-success) !important;
+    color: #f4f5f9 !important;
+    border: none;
+    border-radius: 0.375rem;
+}
+
+.sidebar-list a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.sidebar-logo {
+    width: 150px;
+}
+
+.sidebar-body {
+    top: calc(90px + 1.5rem);
+    max-height: calc(100dvh - 90px - 3rem);
+}
+
+.sidebar-body::-webkit-scrollbar {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    header {
+        z-index: 100000000;
+    }
+
+    .sidebar {
+        flex: 0 0 calc(300px - 1.5rem);
+    }
+
+    .dashboard-container {
+        flex: 0 0 calc(100% - 300px);
+    }
+}

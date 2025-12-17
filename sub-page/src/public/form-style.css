@@ -1,0 +1,211 @@
+/* ---------------------------< input date >--------------------------- */
+
+.datepicker-plot-area {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    font-family: inherit;
+    box-shadow: none;
+    padding: 5px;
+    width: 250px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.datepicker-navigator {
+    background-color: #fff;
+    border-radius: 0px;
+    border: 1px solid black;
+    color: #000 !important;
+}
+
+.datepicker-day-view .header {
+    border-bottom: 1px solid #494949;
+    padding-bottom: 4px !important;
+    margin-bottom: 4px !important;
+}
+
+.pwt-btn-next,
+.pwt-btn-prev {
+    color: transparent !important;
+    position: relative;
+}
+
+.pwt-btn-switch {
+    border-right: 1px solid #494949;
+    border-left: 1px solid #494949;
+    width: 70% !important;
+    margin: 0 !important;
+}
+
+.pwt-btn-next::after {
+    content: '>';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    color: #5c5c5c !important;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pwt-btn-prev::after {
+    content: '<';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    color: #5c5c5c !important;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pwt-btn-next:hover,
+.pwt-btn-prev:hover,
+.pwt-btn-switch:hover {
+    background-color: #e5e5e5 !important;
+}
+
+.pwt-btn-calendar {
+    display: none !important;
+}
+
+.pwt-btn-today {
+    border: 1px solid #494949;
+    margin: 0 !important;
+    height: 28px !important;
+    float: none !important;
+}
+
+.pwt-btn-today:hover {
+    background-color: #e5e5e5 !important;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td span {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.datepicker-day-view td.selected span {
+    background-color: #bebebe !important;
+    color: #000 !important;
+    border: 1px solid #6d6d6d !important;
+    text-shadow: none !important;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td.today span {
+    background-color: #626262 !important;
+    color: #fff !important;
+    border: 1px solid #626262 !important;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td span:hover {
+    background-color: #e5e5e5 !important;
+    border: 1px solid #aaa !important;
+    color: #000 !important;
+}
+
+.month-item {
+    background-color: transparent !important;
+    margin: 0 !important;
+    border: 1px solid #fff !important;
+}
+
+.month-item.selected {
+    background-color: #bebebe !important;
+    color: #000 !important;
+    border: 1px solid #6d6d6d !important;
+    text-shadow: none !important;
+}
+
+.month-item:hover {
+    background-color: #e5e5e5 !important;
+    border: 1px solid #aaa !important;
+    color: #000 !important;
+}
+
+.year-item {
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
+}
+
+.year-item.selected {
+    background-color: #bebebe !important;
+    color: #000 !important;
+    border: 1px solid #6d6d6d !important;
+    text-shadow: none !important;
+}
+
+.year-item:hover {
+    background-color: #e5e5e5 !important;
+    border: 1px solid #aaa !important;
+    color: #000 !important;
+}
+
+/* ---------------------------< change bootstrap styles >--------------------------- */
+
+.form-floating>label {
+    left: auto;
+    right: 15px;
+    transition: font-size .1s ease-in-out, opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    transform: scale(1) translateY(-0.8rem) translateX(0rem);
+    font-size: 14px;
+    opacity: .8;
+}
+
+.form-floating>label::after {
+    background-color: transparent !important;
+}
+
+/* ---------------------------< custom styles >--------------------------- */
+
+input:focus,
+textarea:focus {
+    border: 2px solid var(--border-color);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+    width: calc(100% - 80px);
+    margin: 0;
+}
+
+textarea {
+    box-shadow: none !important;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+/* ---------------------------< classes >--------------------------- */
+
+.parent-input {
+    height: 60px;
+    flex-basis: 300px;
+}
+
+.parent-button {
+    max-width: 500px;
+}
+
+.parent-button button,
+.parent-button a {
+    flex-basis: 200px;
+    height: 40px;
+}

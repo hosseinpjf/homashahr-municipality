@@ -1,0 +1,92 @@
+.table-styled {
+    table-layout: fixed;
+
+    --bs-table-bg: var(--color-surface);
+    --bs-table-color: var(--color-text-primary);
+
+    --bs-table-border-color: var(--border-color);
+    border: 3px solid var(--border-color) !important;
+
+    --bs-table-hover-color: var(--color-text-primary);
+    --bs-table-hover-bg: var(--hover-smooth);
+}
+
+.table-styled td,
+.table-styled th {
+    border: 3px solid var(--border-color) !important;
+}
+
+.head-table {
+    --bs-table-bg: var(--color-success);
+    --bs-table-color: #fff;
+}
+
+.operations-btn-show:hover {
+    background-color: rgba(128, 128, 128, .2) !important;
+}
+
+.operations-btn:nth-of-type(1):hover {
+    background-color: rgba(13, 109, 253, 0.5) !important;
+}
+
+.operations-btn:nth-of-type(2):hover {
+    background-color: rgba(25, 135, 84, 0.5) !important;
+}
+
+.operations-btn:nth-of-type(3):hover {
+    background-color: rgba(239, 68, 68, 0.5) !important;
+}
+
+.table-styled tr {
+    height: 60px;
+}
+
+.head-table th:last-of-type {
+    width: 50px;
+    height: calc(60px - 1rem);
+}
+
+.operations-btn,
+.operations-btn-show {
+    width: 35px;
+}
+
+.operations-buttons>div {
+    --bs-dropdown-min-width: auto;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.modal-body::-webkit-scrollbar {
+    display: none;
+}
+
+.modal {
+    --bs-modal-zindex: 100001000 !important;
+}
+
+.modal-backdrop {
+    z-index: 100000500 !important;
+}
+
+#deleteModal .modal-footer button:hover{
+    color: black;
+}
+
+@media (min-width: 576px) {
+    .head-table th:last-of-type {
+        width: 150px;
+    }
+
+    .operations-buttons>div {
+        position: static;
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    .operations-btn {
+        border-radius: 0.25rem !important;
+    }
+}

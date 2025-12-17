@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@latest/css/around.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../public/basic-style.css">
+    <link rel="stylesheet" href="../../../public/table-style.css">
+    <link rel="stylesheet" href="./list-celebrities.css">
+    <title>List Celebrities</title>
+</head>
+
+<body dir="rtl">
+
+    <section class="parent">
+
+        <!-- header -->
+        <header class="bg-transparent position-sticky top-0 z-5 w-100">
+
+            <!-- navbar -->
+            <nav class="navbar bg-body py-3 px-sm-3 border-bottom border-2 border-color h-100">
+                <div class="h-100 bg-body container-fluid">
+                    <button class="btn border-0 p-0 d-lg-none" style="width: 40px;" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#sidebarHeader" aria-controls="sidebarHeader">
+                        <img class="w-100" src="../../../assets/images/menu.svg" alt="">
+                    </button>
+                    <div class="header-logo h-100 d-none d-lg-block">
+                        <img class="w-auto h-100"
+                            src="https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="">
+                    </div>
+                    <div class="header-nav navbar-brand d-flex align-items-center gap-3">
+                        <button class="btn border-0 p-0" style="width: 35px;" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img class="w-100" src="../../../assets/images/search.svg" alt="">
+                        </button>
+                        <button class="btn border-0 p-0 theme-toggle" type="button" title="Toggle theme"
+                            aria-label="Toggle theme">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="35px" height="35px"
+                                fill="currentColor" class="theme-toggle__around" viewBox="0 0 32 32">
+                                <clipPath id="theme-toggle__around__cutout">
+                                    <path d="M0 0h42v30a1 1 0 00-16 13H0Z" />
+                                </clipPath>
+                                <g clip-path="url(#theme-toggle__around__cutout)">
+                                    <circle cx="16" cy="16" r="8.4" />
+                                    <g>
+                                        <circle cx="16" cy="3.3" r="2.3" />
+                                        <circle cx="27" cy="9.7" r="2.3" />
+                                        <circle cx="27" cy="22.3" r="2.3" />
+                                        <circle cx="16" cy="28.7" r="2.3" />
+                                        <circle cx="5" cy="22.3" r="2.3" />
+                                        <circle cx="5" cy="9.7" r="2.3" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                        <a class="rounded-circle bg-success overflow-hidden shadow-sm" href="#">
+                            <img class="d-inline-block image-fit"
+                                src="https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- search -->
+            <div class="collapse" id="collapseExample">
+                <form
+                    class="input-group w-75 mx-auto border border-top-0 border-2 border-color rounded-bottom-4 overflow-hidden bg-body">
+                    <input type="text" class="form-control py-3 rounded-0 bg-transparent border-0"
+                        placeholder="جست و جو کنید..." aria-label="Example text with button addon"
+                        aria-describedby="button-addon1">
+                    <button
+                        class="btn rounded-0 border-0 border-end border-2 border-color fw-bolder pt-0 hover-smooth text-primary"
+                        type="button" id="button-addon1">یافتن</button>
+                </form>
+            </div>
+
+        </header>
+
+        <main class="d-flex gap-4 px-4 pe-lg-0">
+
+            <!-- sidebar -->
+            <div class="sidebar p-lg-4 offcanvas-lg offcanvas-end" tabindex="-1" id="sidebarHeader"
+                aria-labelledby="sidebarHeaderLabel">
+                <div class="offcanvas-header flex-column position-relative">
+                    <button type="button"
+                        class="btn p-0 position-absolute mt-3 ms-3 top-0 start-0 border-0 bg-transparent shadow-none"
+                        style="width: 40px;" data-bs-dismiss="offcanvas" aria-label="Close"
+                        data-bs-target="#sidebarHeader">
+                        <img class="w-100" src="../../../assets/images/route-back.svg" alt="">
+                    </button>
+                    <div class="sidebar-logo">
+                        <img class="w-100"
+                            src="https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div
+                    class="offcanvas-body sidebar-body overflow-auto position-sticky d-flex flex-column align-items-center row-gap-4">
+                    <div class="sidebar-list w-100">
+                        <a class="w-100 fw-bolder h3 fs-3 mb-4 text-decoration-none text-primary" href="../../../../index.html">داشبورد</a>
+                        <div class="list-group list-group-flush border-top border-bottom border-color w-100">
+ 
+                            <a href="../../history/list/list-history.html"
+                                class="list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                تاریخچه
+                            </a>
+ 
+                            <a href="../../news/list/list-news.html"
+                                class="list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                اخبار
+                            </a>
+                            <a href="../../projects/list/list-project.html"
+                                class="list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                پروژه ها
+                            </a>
+                            <a href="../../councils/list/list-councils.html"
+                                class="list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                شورا ها
+                            </a>
+                            <a href="../../mayor/list/list-mayor.html"
+                                class="list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                شهردار
+                            </a>
+                            <a href="../../celebrities/list/list-celebrities.html"
+                                class="list-group-item list-group-item-action active bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                مشاهیر
+                            </a>
+                            <a href="../../martyrs/list/list-martyrs.html"
+                                class="list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                شهدا
+                            </a>
+                            <a href="../../personnel/list/list-personnel.html"
+                                class="list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                پرسنل
+                            </a>
+                            <a href="../../municipality-info/list/list-municipality-info.html"
+                                class="list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6">
+                                مشخصات هماشهر
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dashboard -->
+            <section class="dashboard-container mt-5 pb-4 w-100 overflow-x-hidden">
+
+                <h2 class="fw-bolder m-0">مشاهیر</h2>
+
+                <div class="mt-5">
+                    <a class="btn bg-secondary border-0 rounded-0 d-inline-flex align-items-center column-gap-2"
+                        href="../form/form-celebrities.html">
+                        <img src="../../../assets/images/add-circle.svg" alt="" style="width: 30px;">
+                        <span class="text-white">افزودن شهیر</span>
+                    </a>
+                </div>
+
+                <div class="table-responsive-sm mt-4">
+                    <table class="table table-styled table-hover align-middle">
+                        <thead class="head-table">
+                            <tr>
+                                <th class="fw-bolder fs-5 align-middle">عنوان</th>
+                                <th class="fw-bolder fs-5 align-middle">توضیحات</th>
+                                <th class="overflow-hidden">
+                                    <p class="text-white fw-bolder fs-5 m-0 d-none d-sm-flex h-100 align-items-center">عملیات ها
+                                    </p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="single-line w-100 m-0">عنوان اول</p>
+                                </td>
+                                <td>
+                                    <p class="single-line w-100 m-0">
+                                        متن قرار داده شده برای شهیر اول، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                                        مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                                        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                                        افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ
+                                        پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                        موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                        حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
+                                        مورد استفاده قرار گیرد.
+                                    </p>
+                                </td>
+                                <td class="operations-buttons dropend p-0 px-sm-2">
+                                    <button
+                                        class="btn operations-btn-show dropdown-toggle border-0 mx-auto d-block d-sm-none p-1"
+                                        type="button" data-bs-toggle="dropdown" data-bs-offset="0,5"
+                                        data-bs-auto-close="outside">
+                                        <img class="w-100" src="../../../assets/images/menu-operations.svg" alt="">
+                                    </button>
+                                    <div class="d-sm-flex dropdown-menu bg-body p-0 border border-2 border-color">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <button
+                                                class="btn operations-btn bg-transparent border-0 p-1 rounded-0 rounded-end-1"
+                                                type="button">
+                                                <img class="w-100" src="../../../assets/images/edit.svg" alt="">
+                                            </button>
+                                            <button class="btn operations-btn bg-transparent border-0 p-1 rounded-0"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#fullView"
+                                                data-bs-info='{"title":"عنوان اول", "image": "../../../assets/images/picture.jpeg", "text": "متن قرار داده شده برای شهیر اول، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد."}'>
+                                                <img class="w-100" src="../../../assets/images/show.svg" alt="">
+                                            </button>
+                                            <button
+                                                class="btn operations-btn bg-transparent border-0 p-1 rounded-0 rounded-start-1"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                data-bs-info=''>
+                                                <img class="w-100" src="../../../assets/images/delete.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="single-line w-100 m-0">عنوان دوم</p>
+                                </td>
+                                <td>
+                                    <p class="single-line w-100 m-0">
+                                        متن قرار داده شده برای شهیر دوم، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                                        مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                                        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                                        افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ
+                                        پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                        موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                        حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
+                                        مورد استفاده قرار گیرد.
+                                    </p>
+                                </td>
+                                <td class="operations-buttons dropend p-0 px-sm-2">
+                                    <button
+                                        class="btn operations-btn-show dropdown-toggle border-0 mx-auto d-block d-sm-none p-1"
+                                        type="button" data-bs-toggle="dropdown" data-bs-offset="0,5"
+                                        data-bs-auto-close="outside">
+                                        <img class="w-100" src="../../../assets/images/menu-operations.svg" alt="">
+                                    </button>
+                                    <div class="d-sm-flex dropdown-menu bg-body p-0 border border-2 border-color">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <button
+                                                class="btn operations-btn bg-transparent border-0 p-1 rounded-0 rounded-end-1"
+                                                type="button">
+                                                <img class="w-100" src="../../../assets/images/edit.svg" alt="">
+                                            </button>
+                                            <button class="btn operations-btn bg-transparent border-0 p-1 rounded-0"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#fullView"
+                                                data-bs-info='{"title":"عنوان دوم", "image": "../../../assets/images/picture.jpeg", "text": "متن قرار داده شده برای شهیر دوم، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد."}'>
+                                                <img class="w-100" src="../../../assets/images/show.svg" alt="">
+                                            </button>
+                                            <button
+                                                class="btn operations-btn bg-transparent border-0 p-1 rounded-0 rounded-start-1"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                data-bs-info=''>
+                                                <img class="w-100" src="../../../assets/images/delete.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="single-line w-100 m-0">عنوان سورم</p>
+                                </td>
+                                <td>
+                                    <p class="single-line w-100 m-0">
+                                        متن قرار داده شده برای شهیر سورم، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                                        مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                                        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                                        افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ
+                                        پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                        موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                        حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
+                                        مورد استفاده قرار گیرد.
+                                    </p>
+                                </td>
+                                <td class="operations-buttons dropend p-0 px-sm-2">
+                                    <button
+                                        class="btn operations-btn-show dropdown-toggle border-0 mx-auto d-block d-sm-none p-1"
+                                        type="button" data-bs-toggle="dropdown" data-bs-offset="0,5"
+                                        data-bs-auto-close="outside">
+                                        <img class="w-100" src="../../../assets/images/menu-operations.svg" alt="">
+                                    </button>
+                                    <div class="d-sm-flex dropdown-menu bg-body p-0 border border-2 border-color">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <button
+                                                class="btn operations-btn bg-transparent border-0 p-1 rounded-0 rounded-end-1"
+                                                type="button">
+                                                <img class="w-100" src="../../../assets/images/edit.svg" alt="">
+                                            </button>
+                                            <button class="btn operations-btn bg-transparent border-0 p-1 rounded-0"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#fullView"
+                                                data-bs-info='{"title":"عنوان سورم", "image": "../../../assets/images/picture.jpeg", "text": "متن قرار داده شده برای شهیر سورم، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد."}'>
+                                                <img class="w-100" src="../../../assets/images/show.svg" alt="">
+                                            </button>
+                                            <button
+                                                class="btn operations-btn bg-transparent border-0 p-1 rounded-0 rounded-start-1"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                data-bs-info=''>
+                                                <img class="w-100" src="../../../assets/images/delete.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="single-line w-100 m-0">عنوان چهارم</p>
+                                </td>
+                                <td>
+                                    <p class="single-line w-100 m-0">
+                                        متن قرار داده شده برای شهیر چهارم، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                                        مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                                        کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                                        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                                        افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ
+                                        پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                        موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                        حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
+                                        مورد استفاده قرار گیرد.
+                                    </p>
+                                </td>
+                                <td class="operations-buttons dropend p-0 px-sm-2">
+                                    <button
+                                        class="btn operations-btn-show dropdown-toggle border-0 mx-auto d-block d-sm-none p-1"
+                                        type="button" data-bs-toggle="dropdown" data-bs-offset="0,5"
+                                        data-bs-auto-close="outside">
+                                        <img class="w-100" src="../../../assets/images/menu-operations.svg" alt="">
+                                    </button>
+                                    <div class="d-sm-flex dropdown-menu bg-body p-0 border border-2 border-color">
+                                        <div class="d-flex justify-content-between w-100">
+                                            <button
+                                                class="btn operations-btn bg-transparent border-0 p-1 rounded-0 rounded-end-1"
+                                                type="button">
+                                                <img class="w-100" src="../../../assets/images/edit.svg" alt="">
+                                            </button>
+                                            <button class="btn operations-btn bg-transparent border-0 p-1 rounded-0"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#fullView"
+                                                data-bs-info='{"title":"عنوان چهارم", "image": "../../../assets/images/picture.jpeg", "text": "متن قرار داده شده برای شهیر چهارم، لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد."}'>
+                                                <img class="w-100" src="../../../assets/images/show.svg" alt="">
+                                            </button>
+                                            <button
+                                                class="btn operations-btn bg-transparent border-0 p-1 rounded-0 rounded-start-1"
+                                                type="button" data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                                data-bs-info=''>
+                                                <img class="w-100" src="../../../assets/images/delete.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal fade" id="fullView" tabindex="-1">
+                    <div
+                        class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down modal-lg">
+                        <div class="modal-content bg-surface">
+                            <div class="modal-header border-color border-3">
+                                <h5 class="modal-title">نمایش تمام اطلاعات شهیر</h5>
+                                <button type="button" class="btn p-0 border-0 me-auto ms-0 bg-transparent"
+                                    data-bs-dismiss="modal" aria-label="Close" style="width: 40px;">
+                                    <img class="w-100" src="../../../assets/images/route-back.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="modal-body row align-content-start row-gap-4 pt-4">
+                                <div class="col-12">
+                                    <div class="image-modal mx-auto">
+                                        <img class="info-image image-fit" src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h4 class="info-title m-0"></h4>
+                                </div>
+                                <div class="col-12">
+                                    <p class="info-text m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="deleteModal" tabindex="-1" data-bs-backdrop="static"
+                    data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content bg-surface">
+                            <div class="modal-header border-color border-3 py-2">
+                                <h5 class="modal-title fw-bold">تایید حذف</h5>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <h5>آیا از حذف این آیتم اطمینان دارید؟</h5>
+                            </div>
+                            <div class="modal-footer border-0 row px-4">
+                                <button type="button" class="btn border-0 bg-success col bg-black"
+                                    data-bs-dismiss="modal">خیر</button>
+                                <button type="button" class="btn border-0 bg-accent col bg-black"
+                                    data-bs-dismiss="modal">بله</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script type="module" src="../../../public/basic-script.js"></script>
+    <script src="./list-celebrities.js"></script>
+</body>
+
+</html>
