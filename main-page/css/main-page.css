@@ -135,7 +135,6 @@ header>nav {
 }
 
 .btn-search-rounded:hover {
-    background-color: var(--bg1-hover);
     box-shadow: none !important;
     border: none;
 }
@@ -162,7 +161,7 @@ header>nav {
 
     .form-search,
     .logo-emam {
-        visibility: hidden;
+       display: none!important;
     }
 }
 
@@ -185,7 +184,7 @@ header>nav {
 .search-container {
     display: flex;
     align-items: center;
-    background-color: #d2d1d1;
+    background-color: #eae6e6;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 5px 8px;
